@@ -11,7 +11,7 @@ public class Plateau {
 
     public String getPlateau(){
         for(int j = 0; j < ligne ; j++){
-            for(int i = 0 ; i< nbCase; i++){System.out.print(grille);};
+            for(int i = 0 ; i<= nbCase; i++){System.out.print(grille);};
             System.out.print('\n');
         }
         return null;
@@ -20,15 +20,16 @@ public class Plateau {
     public void setPosBateau(int posBateau){
         this.posBateau = posBateau;
     }
-    public String putBateau(int posBateau){
+    public String putBateau(int posBateau){ //peut être séparer les méthodes ?? 1) affichage 2)incruste le bateau des qu'on est arrivé à la pos
         this.pos = 0;
         setPosBateau(posBateau);
         for(int j = 0; j < ligne ; j++){
-            for(int i = 0 ; i< nbCase; i++){
+            for(int i = 0 ; i<= nbCase; i++){
                 if(this.pos == this.posBateau){
                     System.out.print(bateau);
+                }else{
+                    System.out.print(grille);
                 }
-                System.out.print(grille);
                 this.pos++;
             };
             System.out.print('\n');
