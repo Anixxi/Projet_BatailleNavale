@@ -8,8 +8,8 @@ public class Plateau {
     //private String grille = "|   "; //la case
     //private String bateau = "| b ";
 
-    private List [] grandTab; // faire un tableau qui contient des tab => grandTab(le plateau) | 15 petits tableau qui représente une ligne chaque
-
+    //private List [] grandTab; // faire un tableau qui contient des tab => grandTab(le plateau) | 15 petits tableau qui représente une ligne chaque
+    ArrayList<Integer> grandTab = new ArrayList<Integer>();
 
 
     //private ligneGrille char[] = [];
@@ -37,7 +37,8 @@ public class Plateau {
 
     public void remplirTab(){
         for(int i = 0 ; i < 15 ; i++){
-            //this.grandTab[i] = ["","","","","","","","","","","","","","",""];
+            System.out.println(i);
+            this.grandTab.get(i).add(i);
         }
     }
 
@@ -45,7 +46,7 @@ public class Plateau {
     public void setPosBateau(int posBateau){
         this.posBateau = posBateau;
     }
-    public String putBateau(int posBateau){ //peut être séparer les méthodes ?? 1) affichage 2)incruste le bateau des qu'on est arrivé à la pos
+    public List[] putBateau(int posBateau){ //peut être séparer les méthodes ?? 1) affichage 2)incruste le bateau des qu'on est arrivé à la pos
         /***
         this.pos = 0;
         int tailleBateau = 9;
@@ -67,7 +68,17 @@ public class Plateau {
         }
         return null;
          ***/
-        System.out.println(grandTab);
+        remplirTab();
+        System.out.println("affiche grandTab");
+        toString();
+
+        return null;
+    }
+
+    public String toString(){
+        //String str = new String(this.grandTab);
+        //System.out.println(str);
+        System.out.println(this.grandTab);
         return null;
     }
 
