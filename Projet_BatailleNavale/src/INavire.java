@@ -1,6 +1,9 @@
 public interface INavire {
 
     public String getNom();
+    public String bateau = "-";
+
+
 
     public int getTaille();
 

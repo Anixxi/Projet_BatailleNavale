@@ -1,15 +1,20 @@
 
-public abstract class Navire implements INavire{
+public class Navire implements INavire{
 
     protected boolean estVivant; //private?
     protected boolean navireABouger;
     protected int taille;
     protected String nom;
-    protected final Object objectPartage;
+    public Object objectPartage;
     protected int impacte;
     protected int pointDeVie; //point de vie
 
-    protected Navire(Object object) {
+    public Navire(){}
+
+    public Navire(boolean vivant){
+        this.estVivant = vivant;
+    }
+    public Navire(Object object) {
         objectPartage = object;
         this.estVivant = true;
     }
