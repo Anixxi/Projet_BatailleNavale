@@ -6,4 +6,7 @@ public class Cuirasse extends Navire{
         this.nom = "Amudhan";
         this.impacte = 9;
     }
+
+
+
 }

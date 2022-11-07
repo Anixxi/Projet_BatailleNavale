@@ -22,10 +22,10 @@ public class Menu {
     }
     public void jouer(){
         System.out.println("Le jeu commence ! ");
-        Plateau p = new Plateau();
-        //p.getPlateau();
+        Plateau p1 = new Plateau(15,15);
+        p1.afficher();
         System.out.println("------------------------");
-        p.putBateau(165);
+        //p.putBateau(165);
     }
 
     public void charger(){
