@@ -18,7 +18,6 @@ public class Plateau {
         for (int i = 0; i<nombreLigne; i++) {
             for (int j=0; j<nombreColonne; j++) {
                 plateau [i][j] = new Navire(false);
-
             }
         }
     }

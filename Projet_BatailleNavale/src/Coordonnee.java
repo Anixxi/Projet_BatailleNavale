@@ -1,47 +1,37 @@
 public class Coordonnee {
+    private int xCoordonnee;
+    private int yCoordonnee;
+    private boolean touche;
+    private boolean navireDetruit;
+    private String typeNavire;
 
-    private int ligne = 0;
-    private int colonne = 0;
-    private char caractereA = 'A';
-
-    public Coordonnee(String coordonnees) {
-
-        this.colonne = coordonnees.charAt(0) - caractereA;
-
-        String ligne = coordonnees.substring(1, 2);
-        this.ligne = Integer.parseInt(ligne);
-
+    public Coordonnee(int x, int y, boolean touche, boolean navireDetruit, String typeNavire){
+        this.xCoordonnee=x;
+        this.yCoordonnee=y;
+        this.touche=touche;
+        this.navireDetruit=navireDetruit;
+        this.typeNavire=typeNavire;
     }
 
-    public Coordonnee(int colonne,int ligne) {
-
-        this.ligne = ligne;
-        this.colonne = colonne;
-
+    public int getxCoordonnee() {
+        return xCoordonnee;
     }
 
-    public int getLigne() {
-        return ligne;
+    public int getyCoordonnee() {
+        return yCoordonnee;
     }
 
-    public int getColonne() {
-        return colonne;
+    public boolean isTouche() {
+        return touche;
     }
 
-    public String toString() {
-
-        String coordonnees = new String();
-
-        coordonnees = coordonnees + (char)(colonne + caractereA) + ligne;
-
-        return coordonnees;
-
+    public boolean isNavireDetruit() {
+        return navireDetruit;
     }
 
-    public boolean equals(Coordonnee o){
-
-        return this.colonne == o.colonne
-                && this.ligne == o.ligne;
-
+    public String getTypeNavire() {
+        return typeNavire;
     }
 }
+
+
