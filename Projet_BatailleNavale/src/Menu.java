@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class Menu {
+    
+    //private final Object objet;
+    
+    private 
 
 
     public void createMenu(){
@@ -26,7 +30,7 @@ public class Menu {
         System.out.println("Le jeu commence ! ");
         Plateau p1 = new Plateau(15,15);
         p1.afficher();
-    
+
         for (int i=0;i<=15; i++){
 
             if(i<=9){
@@ -36,11 +40,25 @@ public class Menu {
            System.out.print(i+" ");
 
             }
-            
+
            // System.out.print(i+"  ");
 
         }
+        //placerNavireAlea();
         //p.putBateau(165);
+    }
+
+    private void placerNavireAlea(Object objet) {
+        cuirasseJoueur = new Cuirasse(objet);
+        
+        
+
+
+
+
+        for(int i = 0; i < 10; i++){
+            
+        }
     }
 
     public void charger(){

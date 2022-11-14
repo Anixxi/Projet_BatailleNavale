@@ -18,7 +18,7 @@ public class Plateau {
 
         for (int i = 0; i<nombreLigne; i++) {
             for (int j=0; j<nombreColonne; j++) {
-                plateau [i][j] = new Navire(false);
+                //plateau [i][j] = new Navire(false);
             }
         }
     }
@@ -42,6 +42,7 @@ public class Plateau {
             //System.out.print(1);
         }
 
+
         /*for (int i=0; i<nombreLigne; ++i) {
 
             for (int j = 0; j < nombreColonne; j++) {
@@ -59,6 +60,10 @@ public class Plateau {
         }*/
 
 
+    }
+
+    public void ajouterNavires(){
+        
     }
 }
 

@@ -1,5 +1,5 @@
 
-public class Navire implements INavire{
+public abstract class Navire implements INavire{
 
     protected boolean estVivant; //private?
     protected boolean navireABouger;
