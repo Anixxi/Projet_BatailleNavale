@@ -1,7 +1,6 @@
 package controleur;
-import modele.*;
 
-public class Main_test {
+public class Main {
 
     public static void main(String[] args) {
         Menu menu = new Menu();
