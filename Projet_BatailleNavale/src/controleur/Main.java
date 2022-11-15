@@ -8,7 +8,6 @@ import java.util.Scanner;
 /**
  * controleur.Main Classe qui sert à lancer le jeu, c'est le controleur
  * @author Kichoir, Thanujan, Sofiane, Amudhan
- * @version 1.0.0
  */
 
 
@@ -48,9 +47,9 @@ public class Main {
                         System.out.print(" Direction erronée du navire! Choisissez un chiffre entre [0] pour verticale et [1] pour Horizontale \n> ");
                         direction = scanner.nextLine();
                     }
-                    System.out.print("\nChoisissez la taille du navire entre " + (i + 1) + ":\n[1-7]\n> ");
+                    //System.out.print("\nChoisissez la taille du navire entre " + (i + 1) + ":\n[1-7]\n> ");
 
-                    System.out.println("\nChoisissez votre bateau : ");
+                    System.out.println("\nChoisissez votre bateau : "+ (i + 1));
                     System.out.println("\n1. Croiseur");
                     System.out.println("\n2. Cuirassé");
                     System.out.println("\n3. Destroyer");
@@ -309,8 +308,7 @@ public class Main {
 
 
         } else if (mode.equals("2")) {
-            //The exact same process as PvP for Player 1, Player 2's process is replaced with random methods
-            System.out.println("PvE battle is going to start!");
+            System.out.println("La bataille joueur vs IA va commencer!");
             System.out.println("Selectionner vos bateaux:");
             while (true) {
                 for (int i = 0; i < 5; i++) {

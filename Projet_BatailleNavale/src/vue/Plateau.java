@@ -52,9 +52,9 @@ public class Plateau {
                 if (plateauAdversaire[ligne][colonne] == -1) {
                     System.out.print("\t" + " ");
                 } else if (plateauAdversaire[ligne][colonne] == 0) {
-                    System.out.print("\t" + ConsoleCouleurs.RED_BACKGROUND_BRIGHT + "X" + ConsoleCouleurs.RESET); //raté
+                    System.out.print("\t" + ConsoleCouleurs.BLUE_BACKGROUND_BRIGHT + "X" + ConsoleCouleurs.RESET); //raté
                 } else if (plateauAdversaire[ligne][colonne] == 1) {
-                    System.out.print("\t" + ConsoleCouleurs.BLUE_BACKGROUND_BRIGHT + "&" + ConsoleCouleurs.RESET); //touché
+                    System.out.print("\t" + ConsoleCouleurs.RED_BACKGROUND_BRIGHT + "&" + ConsoleCouleurs.RESET); //touché
                 }
                 System.out.print(" |");
             }

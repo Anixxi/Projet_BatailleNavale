@@ -7,8 +7,6 @@ import java.util.Random;
  * Le joueur 1 est un humain
  * Le joueur 2 peut etre soit un joueur 2 soit une IA
  * @author Kichoir, Thanujan, Sofiane, Amudhan
- *
- *
  */
 
 public class BatailleNavire {
