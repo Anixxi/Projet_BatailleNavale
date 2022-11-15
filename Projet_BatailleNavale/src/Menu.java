@@ -4,10 +4,7 @@ public class Menu {
     
     //private final Object objet;
     
-    private 
-
-
-    public void createMenu(){
+    private void createMenu(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choisissez une option : ");
         System.out.print("1.  JOUER UNE PARTIE   ");
@@ -49,7 +46,7 @@ public class Menu {
     }
 
     private void placerNavireAlea(Object objet) {
-        cuirasseJoueur = new Cuirasse(objet);
+        //cuirasseJoueur = new Cuirasse(objet);
         
         
 

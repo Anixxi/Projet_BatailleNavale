@@ -1,5 +1,5 @@
 
-public abstract class Navire implements INavire{
+public abstract class Navire{
 
     protected boolean estVivant; //private?
     protected boolean navireABouger;
@@ -31,34 +31,5 @@ public abstract class Navire implements INavire{
         return this.navireABouger = aBouger;
     }
 
-    @Override
-    public String getNom() {
-        return this.nom;
-    }
 
-    @Override
-    public int getTaille() {
-        return this.taille;
-    }
-
-    @Override
-    public boolean getStatus() {
-        return this.estVivant;
-    }
-
-    @Override
-    public void setEstVivant(boolean estVivant) {
-        this.estVivant = estVivant;
-    }
-
-    @Override
-    public void tirer(IPlateau plateau) throws Exception {
-        System.out.println("En attente de tir pour le " + this.getNom()); //modif
-
-    }
-
-    @Override
-    public void tirerAleatoire(IPlateau plateau) throws Exception {
-        System.out.println("tire random");
-    }
 }
