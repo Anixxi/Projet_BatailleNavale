@@ -2,7 +2,7 @@ package vue;
 
 /**
  * Cette classe sert à changer la couleur des textes
- *
+ * @author Kichoir, Thanujan, Sofiane, Amudhan
  */
 public class ConsoleCouleurs {
 
