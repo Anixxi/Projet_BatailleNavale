@@ -1,3 +1,5 @@
+package modele;
+
 public class Coordonnee {
     private int xCoordonnee;
     private int yCoordonnee;

@@ -1,4 +1,6 @@
-public class Destroyer extends Navire{
+package modele;
+
+public class Destroyer extends Navire {
 
     protected Destroyer(Object object) {
         super(object);

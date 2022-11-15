@@ -1,4 +1,6 @@
-public class Croiseur extends Navire{
+package modele;
+
+public class Croiseur extends Navire {
 
     protected Croiseur(Object object) {
         super(object);

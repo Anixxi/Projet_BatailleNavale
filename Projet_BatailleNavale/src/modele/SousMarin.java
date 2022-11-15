@@ -1,4 +1,8 @@
-public class SousMarin extends Navire{
+package modele;
+
+import modele.Navire;
+
+public class SousMarin extends Navire {
 
     protected SousMarin(Object object) {
         super(object);

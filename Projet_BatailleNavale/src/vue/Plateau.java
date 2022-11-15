@@ -1,12 +1,13 @@
-import java.util.ArrayList;
-import java.util.List;
+package vue;
+
+import modele.Navire;
 
 public class Plateau {
 
     // attributs
     private int nombreLigne;
     private int nombreColonne;
-    private Navire [] [] plateau;
+    private Navire[] [] plateau;
 
 
 
@@ -18,7 +19,7 @@ public class Plateau {
 
         for (int i = 0; i<nombreLigne; i++) {
             for (int j=0; j<nombreColonne; j++) {
-                //plateau [i][j] = new Navire(false);
+                //plateau [i][j] = new modele.Navire(false);
             }
         }
     }

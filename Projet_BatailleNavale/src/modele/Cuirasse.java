@@ -1,4 +1,6 @@
-public class Cuirasse extends Navire{
+package modele;
+
+public class Cuirasse extends Navire {
 
     protected Cuirasse(Object object) {
         super(object);

@@ -1,3 +1,7 @@
+package controleur;
+import modele.*;
+import vue.*;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -46,7 +50,7 @@ public class Menu {
     }
 
     private void placerNavireAlea(Object objet) {
-        //cuirasseJoueur = new Cuirasse(objet);
+        //cuirasseJoueur = new modele.Cuirasse(objet);
         
         
 
