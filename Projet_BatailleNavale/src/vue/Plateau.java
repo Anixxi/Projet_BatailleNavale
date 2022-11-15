@@ -4,8 +4,6 @@ package vue;
 /**
  * Cette classe simule les plateaux de chaque joueur
  * @author Kichoir, Thanujan, Sofiane, Amudhan
- *
- *
  */
 public class Plateau {
     private static final int lignes = 10;
